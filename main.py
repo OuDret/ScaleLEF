@@ -1,6 +1,6 @@
 import os
 
-input_lef = "SK_stdcell.lef"
+input_lef = "in.lef"
 output_lef = "out.lef"
 scale_factor = 0.1
 
