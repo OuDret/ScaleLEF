@@ -1,0 +1,78 @@
+VERSION 5.8 ;
+BUSBITCHARS "[]" ;
+ DIVIDERCHAR "/" ;
+ 
+ MACRO LOGIC0
+   CLASS CORE ;
+   ORIGIN 0.0 0.0 ;
+   FOREIGN LOGIC0 0.0 0.0 ;
+   SIZE 17.5 BY 140.2 ;
+   SYMMETRY X Y ;
+   SITE std_site ;
+   PIN VDD
+     DIRECTION INOUT ;
+     USE POWER ;
+     PORT
+       LAYER metal2 ;
+         RECT 0.0 132.0 63.0 147.0 ;
+         RECT 17.5 27.5 22.5 147.0 ;
+         RECT 10.0 27.5 15.0 147.0 ;
+     END
+   END VDD
+   PIN VSS
+     DIRECTION INOUT ;
+     USE GROUND ;
+     SHAPE ABUTMENT ;
+     PORT
+       LAYER metal2 ;
+         RECT 0.0 0.0 63.0 15.0 ;
+         RECT 55.5 0.0 60.5 119.5 ;
+     END
+   END VSS
+   PIN OUT
+     DIRECTION OUTPUT ;
+     USE SIGNAL ;
+     PORT
+       LAYER metal3 ;
+         RECT 3.625 106.5 14.125 117.0 ;
+     END
+   END OUT
+   PIN VBG
+     DIRECTION INOUT ;
+     USE POWER ;
+     PORT
+       LAYER metal1 ;
+         RECT 0.0 15.0 17.5 20.0 ;
+         RECT 0.0 127.0 17.5 132.0 ;
+     END
+   END VBG
+   OBS
+     LAYER metal2 ;
+       RECT 3.625 106.5 14.125 117.0 ;
+       RECT 3.84 0.0 13.84 117.0 ;
+       RECT 3.7 140.1 4.05 140.2 ;
+       RECT 4.1 139.6 4.2 140.1 ;
+       RECT 4.0 140.075 4.2 140.1 ;
+       RECT 4.05 140.025 4.1 140.175 ;
+       RECT 3.7 139.5 3.8 140.2 ;
+       RECT 4.05 139.525 4.1 139.675 ;
+       RECT 4.0 139.6 4.2 139.625 ;
+       RECT 3.7 139.5 4.05 139.6 ;
+       RECT 3.1 140.1 3.45 140.2 ;
+       RECT 3.5 139.6 3.6 140.1 ;
+       RECT 3.4 140.075 3.6 140.1 ;
+       RECT 3.45 140.025 3.5 140.175 ;
+       RECT 3.1 139.5 3.2 140.2 ;
+       RECT 3.45 139.525 3.5 139.675 ;
+       RECT 3.4 139.6 3.6 139.625 ;
+       RECT 3.1 139.5 3.45 139.6 ;
+       RECT 2.9 139.65 3.0 140.2 ;
+       RECT 2.5 139.65 2.6 140.2 ;
+       RECT 2.8 139.55 2.9 139.7 ;
+       RECT 2.6 139.55 2.7 139.7 ;
+       RECT 2.7 139.5 2.8 139.625 ;
+   END
+ END LOGIC0
+ 
+ END LIBRARY
+ 
